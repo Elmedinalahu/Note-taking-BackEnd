@@ -3,8 +3,11 @@
     "",
     "\\Notetaking",
     "\\Notetaking\\Notetaking",
-    "\\Notetaking\\Notetaking\\Controllers"
+    "\\Notetaking\\Notetaking\\Controllers",
+    "\\Notetaking\\Notetaking\\Data",
+    "\\Notetaking\\Notetaking\\Models",
+    "\\Notetaking\\Notetaking\\Models\\DomainModels"
   ],
-  "SelectedNode": "\\Notetaking\\Notetaking\\Controllers\\NotesController.cs",
+  "SelectedNode": "\\Notetaking\\Notetaking\\Data\\NotesDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
