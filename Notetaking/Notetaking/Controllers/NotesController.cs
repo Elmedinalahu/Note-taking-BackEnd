@@ -17,6 +17,7 @@ namespace Notetaking.Controllers
         {
             this.dbContext = dbContext;
         }
+
         [HttpGet]
         public IActionResult GetAllNotes()
         {
@@ -58,6 +59,7 @@ namespace Notetaking.Controllers
             return BadRequest();
         }
 
+
         [HttpPost]
         public IActionResult AddNote(AddNoteRequest addNoteRequest)
         {
@@ -74,6 +76,7 @@ namespace Notetaking.Controllers
 
             return Ok(note);
         }
+
 
         [HttpPut]
         [Route("{id:Guid}")]

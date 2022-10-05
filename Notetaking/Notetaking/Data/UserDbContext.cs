@@ -6,10 +6,10 @@ namespace Notetaking.Data
 {
     public class UserDbContext : DbContext
     {
-        public UsersDbContext(DbContextOptions options) : base(options)
+        public UserDbContext(DbContextOptions options) : base(options)
         {
         }
 
-        public DbSet<User> Users { get; set; }
+   
     }
 }
