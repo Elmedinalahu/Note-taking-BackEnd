@@ -1,7 +1,10 @@
-﻿namespace Notetaking.Models.DomainModels
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Notetaking.Models.DomainModels
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
         public string Email { get; set; } = string.Empty;
         public byte[] PasswordHash { get; set; } = new byte[32];
