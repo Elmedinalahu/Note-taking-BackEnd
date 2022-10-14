@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Notetaking.Data;
 using Notetaking.Models.DomainModels;
@@ -6,7 +7,8 @@ using Notetaking.Models.DTO;
 using System.Reflection;
 
 namespace Notetaking.Controllers
-{
+{   
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class NotesController : ControllerBase
@@ -21,6 +23,10 @@ namespace Notetaking.Controllers
         [HttpGet]
         public IActionResult GetAllNotes()
         {
+            // check if user is logged in
+
+            // check for the token in the reuest
+
             var notes = dbContext.Notes.ToList();
 
             var notesDTO = new List<Models.DTO.Note>(); 

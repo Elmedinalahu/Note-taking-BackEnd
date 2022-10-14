@@ -15,6 +15,16 @@ builder.Services.AddDbContext<NotesDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NotesAppConnectionString"));
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Cors",
+                          policy =>
+                          {
+                              policy.WithOrigins("*")
+                                                  .AllowAnyHeader()
+                                                  .AllowAnyMethod();
+                          });
+});
 
 var app = builder.Build();
 
@@ -26,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("Cors");
 
 app.UseAuthorization();
 

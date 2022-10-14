@@ -39,6 +39,8 @@ namespace Notetaking.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
+
+
             return Ok("User successfully created!");
         }
 
@@ -63,6 +65,10 @@ namespace Notetaking.Controllers
             {
                 return BadRequest("Not verified!");
             }
+
+            // Generate  a jwt with the user id as a claim, 
+            // Return to the client the jwt token 
+            // Return the jwt from the Ok method
 
             return Ok($"Welcome back, {user.Email}! ");
         }
