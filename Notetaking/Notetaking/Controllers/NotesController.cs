@@ -8,7 +8,6 @@ using System.Reflection;
 
 namespace Notetaking.Controllers
 {   
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class NotesController : ControllerBase
