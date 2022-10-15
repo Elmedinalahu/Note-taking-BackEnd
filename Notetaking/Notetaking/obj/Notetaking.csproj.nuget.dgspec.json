@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\online\\Desktop\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj": {}
+    "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\online\\Desktop\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj": {
+    "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\online\\Desktop\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
         "projectName": "Notetaking",
-        "projectPath": "C:\\Users\\online\\Desktop\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
-        "packagesPath": "C:\\Users\\online\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\online\\Desktop\\Note-taking-BackEnd\\Notetaking\\Notetaking\\obj\\",
+        "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\online\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
