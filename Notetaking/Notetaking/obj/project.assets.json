@@ -2232,11 +2232,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
       "projectName": "Notetaking",
-      "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
+      "projectPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back\\Note-taking-BackEnd\\Notetaking\\Notetaking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

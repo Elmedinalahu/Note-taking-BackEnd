@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7TRNUAdo30ybaL5T1eCY4R9TSfDQDXJSTRnxhbnwH14POYBH16lTzjNSrRJuvK/fgnHrMDUfjLqSJL4lOmanEA==",
+  "dgSpecHash": "5LuHlJ4Ndt94C12iHKXPrBdEZyBQWPeWQe7aRfeAfLqY21UsW3uBoqgrGf8RC2elitDABI94llV5PB6ytvBtaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back test\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
+  "projectFilePath": "C:\\Users\\lenovo\\OneDrive\\Desktop\\Project\\back\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
