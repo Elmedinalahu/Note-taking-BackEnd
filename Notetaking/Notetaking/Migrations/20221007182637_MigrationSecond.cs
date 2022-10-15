@@ -9,7 +9,7 @@ namespace Notetaking.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AlterColumn<string>(
-                name: "Title",
+                name: "Heading",
                 table: "Notes",
                 type: "nvarchar(max)",
                 nullable: true,
@@ -17,7 +17,7 @@ namespace Notetaking.Migrations
                 oldType: "nvarchar(max)");
 
             migrationBuilder.AlterColumn<string>(
-                name: "Description",
+                name: "Text",
                 table: "Notes",
                 type: "nvarchar(max)",
                 nullable: true,
@@ -58,7 +58,7 @@ namespace Notetaking.Migrations
                 table: "Notes");
 
             migrationBuilder.AlterColumn<string>(
-                name: "Title",
+                name: "Heading",
                 table: "Notes",
                 type: "nvarchar(max)",
                 nullable: false,
@@ -68,7 +68,7 @@ namespace Notetaking.Migrations
                 oldNullable: true);
 
             migrationBuilder.AlterColumn<string>(
-                name: "Description",
+                name: "Text",
                 table: "Notes",
                 type: "nvarchar(max)",
                 nullable: false,

@@ -33,11 +33,11 @@ namespace Notetaking.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Heading")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

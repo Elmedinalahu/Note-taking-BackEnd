@@ -35,8 +35,8 @@ namespace Notetaking.Controllers
                 notesDTO.Add(new Models.DTO.Note
                 {
                     Id = note.Id,
-                    Title = note.Title,
-                    Description = note.Description,
+                    Heading = note.Heading,
+                    Text = note.Text,
                     DateCreated = note.DateCreated
                 });
             }
@@ -54,8 +54,8 @@ namespace Notetaking.Controllers
                 var noteDTO = new Models.DTO.Note
                 {
                     Id = noteDomainObject.Id,
-                    Title = noteDomainObject.Title,
-                    Description = noteDomainObject.Description,
+                    Heading = noteDomainObject.Heading,
+                    Text = noteDomainObject.Text,
                     DateCreated = noteDomainObject.DateCreated
                 };
 
@@ -71,8 +71,8 @@ namespace Notetaking.Controllers
             //Convert the DTO to Domain Model
             var note = new Models.DomainModels.Note
             {
-                Title = addNoteRequest.Title,
-                Description = addNoteRequest.Description,
+                Heading = addNoteRequest.Heading,
+                Text = addNoteRequest.Text,
                 DateCreated = DateTime.Now
             };
 
@@ -91,8 +91,8 @@ namespace Notetaking.Controllers
 
             if (existingNote != null)
             {
-                existingNote.Title = updateNoteRequest.Title;
-                existingNote.Description = updateNoteRequest.Description;
+                existingNote.Heading = updateNoteRequest.Heading;
+                existingNote.Text = updateNoteRequest.Text;
 
                 dbContext.SaveChanges();
 
