@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using Notetaking.Data;
 using Notetaking.Models.DomainModels;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 
 namespace Notetaking.Controllers
