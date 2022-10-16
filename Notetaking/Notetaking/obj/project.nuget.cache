@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W2ewjucqWePuabJSX1a2bnOCJRGtYpbnZ6t5lNV/ZAfX9ZyDyTu4mBhfI41SDjsVwM3Gzwzj1prSA36aUXNnOw==",
+  "dgSpecHash": "FbHlyQCeBEccVeuhFTI9cWB1bSjqYEzIpSMgblry/E2Ta4gUG4cOMmpkejngMe4hs3F4n04DrU05eHlb1CG5SA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\Source\\Repos\\Note-taking-BackEnd\\Notetaking\\Notetaking\\Notetaking.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",

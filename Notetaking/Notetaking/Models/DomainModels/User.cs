@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Notetaking.Models.DomainModels
 {
-    public class User : IdentityUser
+    public class User
     {
         public int Id { get; set; }
         public string Email { get; set; } = string.Empty;

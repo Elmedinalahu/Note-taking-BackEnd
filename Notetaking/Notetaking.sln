@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notetaking", "Notetaking\Notetaking.csproj", "{9228DC1F-73CB-4972-9ADE-287A44E2A97E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notetaking", "Notetaking\Notetaking.csproj", "{9228DC1F-73CB-4972-9ADE-287A44E2A97E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesServiceTesting", "NotesServiceTesting\NotesServiceTesting.csproj", "{18CA411E-6A87-4034-B8D1-B36EB2D394D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9228DC1F-73CB-4972-9ADE-287A44E2A97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9228DC1F-73CB-4972-9ADE-287A44E2A97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9228DC1F-73CB-4972-9ADE-287A44E2A97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CA411E-6A87-4034-B8D1-B36EB2D394D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CA411E-6A87-4034-B8D1-B36EB2D394D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CA411E-6A87-4034-B8D1-B36EB2D394D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CA411E-6A87-4034-B8D1-B36EB2D394D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

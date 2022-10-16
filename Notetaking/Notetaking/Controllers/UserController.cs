@@ -63,10 +63,12 @@ namespace Notetaking.Controllers
                 return BadRequest("Password is incorrect.");
             }
 
-            if (user.VerifiedAt == null)
-            {
-                return BadRequest("Not verified!");
-            }
+            //Elmedine Qetu gjith pe merr si null ndoshta duhesh me bo oren kur u ka verifiku a najsen pa qeto po bon
+
+            //if (user.VerifiedAt == null)
+            //{
+              //  return BadRequest("Not verified!");
+            //}
 
             // Generate  a jwt with the user id as a claim, 
             // Return to the client the jwt token 

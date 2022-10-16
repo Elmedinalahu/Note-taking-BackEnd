@@ -189,3 +189,4 @@ C:\Users\Lenovo\Source\Repos\Note-taking-BackEnd\Notetaking\Notetaking\bin\Debug
 C:\Users\Lenovo\Source\Repos\Note-taking-BackEnd\Notetaking\Notetaking\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Lenovo\Source\Repos\Note-taking-BackEnd\Notetaking\Notetaking\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Lenovo\Source\Repos\Note-taking-BackEnd\Notetaking\Notetaking\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Lenovo\Source\Repos\Note-taking-BackEnd\Notetaking\Notetaking\bin\Debug\net6.0\FluentAssertions.dll

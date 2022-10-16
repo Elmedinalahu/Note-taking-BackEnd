@@ -1,10 +1,14 @@
+using FluentAssertions.Common;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Notetaking.Configs;
 using Notetaking.Data;
+using System;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
@@ -42,6 +46,7 @@ builder.Services.AddAuthentication(options =>
 
         };
     });
+
 
 builder.Services.AddCors(options =>
 {

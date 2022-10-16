@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Notetaking",
-    "\\Notetaking\\Notetaking",
-    "\\Notetaking\\Notetaking\\Controllers",
-    "\\Notetaking\\Notetaking\\Data",
-    "\\Notetaking\\Notetaking\\Models",
-    "\\Notetaking\\Notetaking\\Models\\DomainModels"
+    ""
   ],
-  "SelectedNode": "\\Notetaking\\Notetaking\\Data\\NotesDbContext.cs",
+  "SelectedNode": "\\Notetaking.sln",
   "PreviewInSolutionExplorer": false
 }

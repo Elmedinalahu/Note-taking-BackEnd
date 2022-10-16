@@ -4,6 +4,13 @@ namespace Notetaking.Models.DomainModels
 {
     public class UserRegisterRequest
     {
+        public UserRegisterRequest(string email, string password, string confirmPassword)
+        {
+            Email = email;
+            Password = password;
+            ConfirmPassword = confirmPassword;
+        }
+
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
 
