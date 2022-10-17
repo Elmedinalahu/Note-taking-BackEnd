@@ -22,9 +22,7 @@ namespace Notetaking.Controllers
         [HttpGet]
         public IActionResult GetAllNotes()
         {
-            // check if user is logged in
-
-            // check for the token in the reuest
+            //A method to get all existing notes created before and stored in database
 
             var notes = dbContext.Notes.ToList();
 
@@ -40,7 +38,7 @@ namespace Notetaking.Controllers
                     DateCreated = note.DateCreated
                 });
             }
-
+            //If we find the notes we sent the message 200 success
             return Ok(notesDTO);
         }
 
@@ -48,6 +46,7 @@ namespace Notetaking.Controllers
         [Route("{id:Guid}")]
         public IActionResult GetNoteById(Guid id)
         {
+            //A method to get notes based on their id
             var noteDomainObject = dbContext.Notes.Find(id);
             if (noteDomainObject != null)
             {
@@ -58,7 +57,7 @@ namespace Notetaking.Controllers
                     Text = noteDomainObject.Text,
                     DateCreated = noteDomainObject.DateCreated
                 };
-
+                //If we find the requested note we send the message 200 success and the requested note
                 return Ok(noteDTO);
             }
             return BadRequest();
@@ -68,7 +67,7 @@ namespace Notetaking.Controllers
         [HttpPost]
         public IActionResult AddNote(AddNoteRequest addNoteRequest)
         {
-            //Convert the DTO to Domain Model
+            //A method to add a new note
             var note = new Models.DomainModels.Note
             {
                 Heading = addNoteRequest.Heading,
@@ -78,7 +77,7 @@ namespace Notetaking.Controllers
 
             dbContext.Notes.Add(note);
             dbContext.SaveChanges();
-
+            //If the note is added with success we return a 200 success
             return Ok(note);
         }
 
@@ -86,7 +85,7 @@ namespace Notetaking.Controllers
         [HttpPut]
         [Route("{id:Guid}")]
         public IActionResult UpdateNote(Guid id, UpdateNoteRequest updateNoteRequest)
-        {
+        {   //A method to update the existing notes.
             var existingNote = dbContext.Notes.Find(id);
 
             if (existingNote != null)
@@ -95,7 +94,7 @@ namespace Notetaking.Controllers
                 existingNote.Text = updateNoteRequest.Text;
 
                 dbContext.SaveChanges();
-
+                //If we found the note we update it and post it in database
                 return Ok(existingNote);
             }
 
@@ -105,14 +104,14 @@ namespace Notetaking.Controllers
         [HttpDelete]
         [Route("{id:Guid}")]
         public IActionResult DeleteNote(Guid id)
-        {
+        {   //A method to delete notes
             var existingNote = dbContext.Notes.Find(id);
 
             if(existingNote != null)
             {
                 dbContext.Notes.Remove(existingNote);
                 dbContext.SaveChanges();
-
+                //if we find the note than me delete it and return a 200 success message
                 return Ok();
             }
 

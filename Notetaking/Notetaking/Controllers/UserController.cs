@@ -21,7 +21,7 @@ namespace Notetaking.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserRegisterRequest request)
         {
-            if (_context.Users.Any(u => u.Email == request.Email))
+            if (_context.Users.Any(u => u.Email == request.Email)) //Before registering a user we check if it already exist
             {
                 return BadRequest("User already exists");
             }
@@ -29,14 +29,14 @@ namespace Notetaking.Controllers
             CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);
             
             var user = new User
-            {
+            { //Initializing the properties of the new user
                 Email = request.Email,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                 VerificationToken = CreateRandomToken()
             };
 
-            _context.Users.Add(user);
+            _context.Users.Add(user); // adding the user
             await _context.SaveChangesAsync();
 
 
@@ -47,7 +47,7 @@ namespace Notetaking.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserLoginRequest request)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email); //Save into the variable user all the users that exist with this properites
 
             if (user == null)
             {
@@ -56,15 +56,15 @@ namespace Notetaking.Controllers
             
             
 
-            if(!VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
+            if(!VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt)) //Check the password
             {
                 return BadRequest("Password is incorrect.");
             }
 
-            if (user.VerifiedAt == null)
-            {
-                return BadRequest("Not verified!");
-            }
+       //     if (user.VerifiedAt == null)
+        //    {
+         //       return BadRequest("Not verified!");
+            //}
 
             // Generate  a jwt with the user id as a claim, 
             // Return to the client the jwt token 
@@ -77,10 +77,10 @@ namespace Notetaking.Controllers
         [HttpPost("verify")]
         public async Task<IActionResult> Verify(string token)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.VerificationToken == token);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.VerificationToken == token); //Check if there is a user with the same verification token
             if(user == null)
             {
-                return BadRequest("Invalid token.");
+                return BadRequest("Invalid token."); 
             }
 
             user.VerifiedAt = DateTime.Now;
